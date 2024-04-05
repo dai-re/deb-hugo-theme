@@ -1,0 +1,14 @@
+{{ $title := .Get "title" | default "#" }} {{ $link := .Get "link" | default "/"
+}}
+
+<div class="btn-download">
+  <div class="text-d">
+    <h2>{{$title}}</h2>
+    <p>keterangan</p>
+  </div>
+  <a href="{{$link}}">
+    <div class="btn">
+      <img src="/download.svg" alt="" />
+    </div>
+  </a>
+</div>
