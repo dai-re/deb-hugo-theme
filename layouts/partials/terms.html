@@ -15,9 +15,9 @@ For a given taxonomy, renders a list of terms assigned to the page.
 <div class="tag-s">
 {{/*  TODO: UHHHH   */}}
   {{/*  <div>{{ $label }}:</div>  */}}
-  <ul>
+  <ul class="terms">
     {{- range . }}
-    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    <li class="terms-list"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
     {{- end }}
   </ul>
 </div>

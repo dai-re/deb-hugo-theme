@@ -5,6 +5,26 @@
   font-family: monospace;
 }
 
+/* heading text */
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 14px;
+}
+h4 {
+  font-size: 10px;
+}
+
+h1,h2,h3,h4{
+  color: orange;
+}
+/* heading text */
+
+
 a {
   text-decoration: none;
   color: unset;
@@ -46,6 +66,7 @@ h2 > .letter-d {
   width: 70px;
   height: 70px;
   background: orange;
+  color: white !important;
   font-size: 2em;
   /* text-transform: uppercase; */
 }
@@ -129,11 +150,11 @@ header > ul > li::first-letter {
   margin-top: 2em;
 }
 
-.tag-s ul {
+/* .tag-s ul {
   display: flex;
   flex-direction: column;
   gap: 0.2em;
-}
+} */
 
 .tag-s ul li {
   /* border: 1px solid lightgrey; */
@@ -147,17 +168,60 @@ header > ul > li::first-letter {
   color: orange;
 }
 
-.main .list ul {
+/* .main .list ul {
   gap: 0.3em;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .main .list ul li:hover {
   background: lightgray;
   /* border-radius: 6px; */
 }
 
+
+.copy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: lightgrey;
+}
+
+
+/*! single post page css */
+.terms {
+  display: flex;
+  gap: 4px;
+}
+
+.terms .terms-list {
+  background: orange;
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+
+.post-time{
+  margin-bottom: 1em;
+  background: orange;
+  /* width: 50%; */
+  /* margin: 1rem 0; */
+  /* font-size: 10px; */
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+.post-title{
+  color: orange;
+}
+
+.post {
+  margin-top: 1em;
+}
+/* post page css */
+
+
+
+/* ! post list code */
 .home-l {
   /* border: 1px solid #000; */
   /* padding: 1px 1em; */
@@ -166,6 +230,7 @@ header > ul > li::first-letter {
 
 .home-l li {
   padding: 1px 1em;
+  display: flex;
 }
 
 .home-l ul a:nth-child(1) li::before {
@@ -180,14 +245,25 @@ header > ul > li::first-letter {
   color: gray;
 }
 
-.copy {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: lightgrey;
+.post-tag-list{
+  display: flex !important;
+  align-items: center;
+  gap: 3px;
 }
+.tag-list-post {
+  display: flex;
+  padding: 0 2px;
+  border-radius: 2px;
+  font-size: 9px;
+  margin-right: 4px;
+  background-color: orange;
+  color: white !important;
+}
+/* post list code */
 
+/* ! short code */
 .btn-download {
+  margin: 1em 0;
   border: 1px solid orange;
   /* border-radius: 1em; */
   justify-content: space-between;
@@ -199,7 +275,7 @@ header > ul > li::first-letter {
 }
 
 .btn-download .text-d h2 {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .btn-download .text-d p {
   color: grey;
@@ -207,7 +283,7 @@ header > ul > li::first-letter {
   font-size: 0.8em;
 }
 .text-d h3 {
-  font-size: 30px;
+  font-size: 20px;
   width: 90%;
 }
 
@@ -223,6 +299,7 @@ a .btn img {
   width: 30px;
 }
 
+/*  short code */
 /*INFO: css for mobile view  */
 @media (max-width: 415px) {
   .container {

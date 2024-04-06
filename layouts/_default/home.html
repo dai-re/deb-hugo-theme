@@ -3,7 +3,19 @@
 {{ range site.RegularPages }}
 {{ if eq .Type "post" }}
 <a href="{{ .RelPermalink }}">
-  <li><span>{{ .Date.Format "2006-01-02" }}</span> - {{ .LinkTitle }}</li>
+  <li>
+    {{ range .Params.tags }}
+    <div class="post-tag-list">
+      <div class="tag-list-post">
+        {{ . }}
+      </div>
+    </div>
+    {{ end }}
+    <span>
+    {{ .Date.Format "2006-01-02" }}
+  </span>- 
+   {{ .LinkTitle }}
+  </li>
 </a>
 {{ end }}
 {{ end }}

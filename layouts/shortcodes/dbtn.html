@@ -1,10 +1,11 @@
-{{ $title := .Get "title" | default "#" }} {{ $link := .Get "link" | default "/"
-}}
+{{ $title := .Get "title" | default "#" }}
+{{ $link := .Get "link" | default "/" }}
+{{ $des := .Get "des" | default "#"}}
 
 <div class="btn-download">
   <div class="text-d">
     <h2>{{$title}}</h2>
-    <p>keterangan</p>
+    <p>{{$des}}</p>
   </div>
   <a href="{{$link}}">
     <div class="btn">
