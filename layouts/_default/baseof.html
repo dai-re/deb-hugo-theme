@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html
   lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
   dir="{{ or site.Language.LanguageDirection `ltr` }}"
@@ -7,15 +7,15 @@
     {{ partial "head.html" . }}
   </head>
 
-  <body>
-    <header>{{ partial "header.html" . }}</header>
+  <body class="w-screen min-h-screen bg-yellow-200 relative overflow-x-auto">
+    <header class="flex justify-between items-center">{{ partial "header.html" . }}</header>
     <main>
-      <div class="container">
-        <div class="side">
-          <div class="tag">
-            <ul class="ul-ls-h">
+      <div class="grid sm:grid-cols-[150px_1fr]">
+        <div class="justify-center py-6 side hidden sm:flex">
+          <div class="">
+            <ul class="flex gap-2 flex-wrap justify-center">
               {{ range .Site.Taxonomies.tags }}
-              <li class="li-ls-h">
+              <li class="bg-orange-500 rounded-sm px-2 font-bold">
                 <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
               </li>
               {{ end }}
@@ -23,10 +23,10 @@
           </div>
           <div class="category"></div>
         </div>
-        <div class="main">
-          <div class="list">
-            <div class="home-l">
-              <ul>
+        <div class="py-6 ml-3">
+          <div class="">
+            <div class="">
+              <ul class="flex flex-col justify-center gap-2">
                 {{ block "main" . }}{{ end }}
               </ul>
             </div>

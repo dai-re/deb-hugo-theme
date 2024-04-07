@@ -1,22 +1,11 @@
-{{ define "main" }}
-{{ .Content }}
-{{ range site.RegularPages }}
-{{ if eq .Type "post" }}
+{{ define "main" }} {{ .Content }} {{ range site.RegularPages }} {{ if eq .Type "post" }}
 <a href="{{ .RelPermalink }}">
-  <li>
+  <li class="flex items-center gap-2 list-menu text-sm hover:bg-orange-500 hover:rounded-sm">
     {{ range .Params.tags }}
-    <div class="post-tag-list">
-      <div class="tag-list-post">
-        {{ . }}
-      </div>
-    </div>
+    <div class="bg-orange-500 px-3 rounded-sm font-bold text-yellow-200">{{ . }}</div>
     {{ end }}
-    <span>
-    {{ .Date.Format "2006-01-02" }}
-  </span>- 
-   {{ .LinkTitle }}
+    <span class="text-xs text-gray-500 ">{{ .Date.Format "2006-01-02" }}</span>- {{ .LinkTitle }}
+    
   </li>
 </a>
-{{ end }}
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} {{ end }}

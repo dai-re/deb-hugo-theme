@@ -2,14 +2,14 @@
 {{ $link := .Get "link" | default "/" }}
 {{ $des := .Get "des" | default "#"}}
 
-<div class="btn-download">
-  <div class="text-d">
-    <h2>{{$title}}</h2>
-    <p>{{$des}}</p>
+<div class="h-[50px] flex items-center justify-between border border-orange-500 mx-12 my-5 rounded-sm">
+  <div class="flex-row ml-3">
+    <h4>{{$title}}</h4>
+    <p class="text-xs italic before:content-['*']">{{$des}}</p>
   </div>
-  <a href="{{$link}}">
-    <div class="btn">
-      <img src="/download.svg" alt="" />
+  <a href="{{$link}}" class="w-[50px] h-[50px] flex items-center justify-center bg-orange-500">
+    <div class="">
+      <img class="w-6" src="/download.svg" alt="" />
     </div>
   </a>
 </div>

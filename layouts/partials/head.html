@@ -1,9 +1,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
 <link rel="shortcut icon" href="{{ .Site.BaseURL }}/favicon.ico" type="image/x-icon" />
-
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap"
+  rel="stylesheet"
+/>
 <title>
-  {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
-  site.Title }}{{ end }}
+  {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}
 </title>
 {{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}

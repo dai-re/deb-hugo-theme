@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>File on d</title>
+    <link>//localhost:1313/tags/file/</link>
+    <description>Recent content in File on d</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 09:00:00 -0700</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/file/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#4dk2345</title>
+      <link>//localhost:1313/post/test/</link>
+      <pubDate>Mon, 15 Jan 2024 09:00:00 -0700</pubDate>
+      <guid>//localhost:1313/post/test/</guid>
+      <description>test download 120kb&#xA;test download 44kb&#xA;Eu dolor elit consequat eu nulla proident nulla amet. Dolor et proident aute cupidatat qui eu mollit proident ea veniam nulla. Cillum officia enim exercitation ipsum eiusmod occaecat dolore minim ullamco dolor eu consequat minim. Minim commodo eu dolor in ut cillum ad tempor elit est.&#xA;test download 1tb</description>
+    </item>
+    <item>
+      <title>#h56456</title>
+      <link>//localhost:1313/post/test-copy/</link>
+      <pubDate>Mon, 15 Jan 2024 09:00:00 -0700</pubDate>
+      <guid>//localhost:1313/post/test-copy/</guid>
+      <description>test download 120kb&#xA;test download 44kb&#xA;Eu dolor elit consequat eu nulla proident nulla amet. Dolor et proident aute cupidatat qui eu mollit proident ea veniam nulla. Cillum officia enim exercitation ipsum eiusmod occaecat dolore minim ullamco dolor eu consequat minim. Minim commodo eu dolor in ut cillum ad tempor elit est.&#xA;test download 1tb</description>
+    </item>
+  </channel>
+</rss>
