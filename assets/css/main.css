@@ -593,8 +593,8 @@ ol, ul, menu{
   margin-left: 1.5rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .block {
@@ -669,6 +669,10 @@ ol, ul, menu{
 
 .list-disc {
   list-style-type: disc;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .flex-row {
@@ -793,6 +797,11 @@ ol, ul, menu{
   padding-bottom: 1.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -818,6 +827,10 @@ ol, ul, menu{
 
 .font-bold {
   font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .italic {
@@ -911,7 +924,9 @@ h6 {
   content: '[+]';
 }
 
-/* ! border right in baseof.html */
+/* ! baseof.html */
+
+/* border code */
 
 .side {
   min-height: calc(100vh-25px) !important;
@@ -1040,13 +1055,13 @@ table tr td {
 
 /* ! styleing for list in single.thml */
 
-ol li {
+.post ol li {
   margin-left: 1.5rem;
   list-style-position: outside;
   list-style-type: decimal;
 }
 
-ul > li {
+.post ul > li {
   margin-left: 1.5rem;
   list-style-position: outside;
   list-style-type: disc;
@@ -1073,6 +1088,20 @@ ul > li {
 .hover\:bg-orange-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+.hover\:px-2:hover {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {

@@ -12,10 +12,10 @@
     <main>
       <div class="grid sm:grid-cols-[150px_1fr] main_canvas">
         <div class="justify-center py-6 side hidden sm:flex">
-          <div class="">
+          <div class="px-2">
             <ul class="flex gap-2 flex-wrap justify-center">
               {{ range .Site.Taxonomies.tags }}
-              <li class="bg-orange-500 rounded-sm px-2 font-bold">
+              <li class="bg-orange-500 rounded-sm px-2 text-xs font-bold list-none">
                 <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
               </li>
               {{ end }}
