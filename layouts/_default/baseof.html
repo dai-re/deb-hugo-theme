@@ -7,10 +7,10 @@
     {{ partial "head.html" . }}
   </head>
 
-  <body class="w-screen min-h-screen bg-yellow-200 relative overflow-x-auto">
+  <body class="w-screen min-h-screen elative overflow-x-auto">
     <header class="flex justify-between items-center">{{ partial "header.html" . }}</header>
     <main>
-      <div class="grid sm:grid-cols-[150px_1fr]">
+      <div class="grid sm:grid-cols-[150px_1fr] main_canvas">
         <div class="justify-center py-6 side hidden sm:flex">
           <div class="">
             <ul class="flex gap-2 flex-wrap justify-center">
@@ -34,6 +34,6 @@
         </div>
       </div>
     </main>
-    <footer>{{ partial "footer.html" . }}</footer>
+    <footer class="sticky bottom-0">{{ partial "footer.html" . }}</footer>
   </body>
 </html>

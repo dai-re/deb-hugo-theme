@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "css" : "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --watch",
+    "css" : "npx tailwindcss --offline -i ./assets/css/input.css -o ./assets/css/main.css --watch",
     "hugo" : "hugo server"
   },
   "dependencies": {
