@@ -5,6 +5,7 @@
 >
   <head>
     {{ partial "head.html" . }}
+    {{ if .Param "math" }} {{ partialCached "math.html" . }} {{ end }}
   </head>
 
   <body class="w-screen min-h-screen elative overflow-x-auto">
