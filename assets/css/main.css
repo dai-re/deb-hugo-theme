@@ -446,7 +446,9 @@ video {
   display: none;
 }
 
-ol, ul, menu{
+ol,
+  ul,
+  menu {
   list-style: none;
 }
 
@@ -587,10 +589,6 @@ ol, ul, menu{
 
 .ml-3 {
   margin-left: 0.75rem;
-}
-
-.ml-6 {
-  margin-left: 1.5rem;
 }
 
 .mr-4 {
@@ -846,16 +844,6 @@ ol, ul, menu{
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-yellow-100 {
-  --tw-text-opacity: 1;
-  color: rgb(254 249 195 / var(--tw-text-opacity));
-}
-
-.text-yellow-200 {
-  --tw-text-opacity: 1;
-  color: rgb(254 240 138 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -959,13 +947,23 @@ footer {
 }
 
 .post > p {
-  text-indent: 1em
+  text-indent: 1em;
 }
 
 .post > p::first-letter {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
+}
+
+.thumbnail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail img {
+  wwidth: 100%;
 }
 
 /* ! styleing for <code> */
@@ -1013,7 +1011,9 @@ pre {
   margin: 10px 0 10px 10px;
   border-radius: 50%;
   background-color: rgb(249, 115, 22, 0.7);
-  box-shadow: 20px 0px rgba(255, 255, 0, 0.5), 40px 0px rgb(0, 0, 255, 0.6);
+  box-shadow:
+    20px 0px rgba(255, 255, 0, 0.5),
+    40px 0px rgb(0, 0, 255, 0.6);
 }
 
 /* ! sytleing for table in single.html */
@@ -1074,10 +1074,6 @@ table tr td {
 .first-letter\:text-xl::first-letter {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.first-letter\:font-bold::first-letter {
-  font-weight: 700;
 }
 
 .before\:content-\[\'\*\'\]::before {

@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  ol, ul, menu{
+  ol,
+  ul,
+  menu {
     list-style: none;
   }
 }
@@ -93,7 +95,15 @@ footer {
 }
 .post > p {
   text-indent: 1em;
-  @apply first-letter:text-xl first-letter:font-bold
+  @apply first-letter:text-xl first-letter:font-bold;
+}
+.thumbnail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.thumbnail img {
+  wwidth: 100%;
 }
 
 /* ! styleing for <code> */
@@ -125,7 +135,9 @@ pre {
   margin: 10px 0 10px 10px;
   border-radius: 50%;
   background-color: rgb(249, 115, 22, 0.7);
-  box-shadow: 20px 0px rgba(255, 255, 0, 0.5), 40px 0px rgb(0, 0, 255, 0.6);
+  box-shadow:
+    20px 0px rgba(255, 255, 0, 0.5),
+    40px 0px rgb(0, 0, 255, 0.6);
 }
 
 /* ! sytleing for table in single.html */
@@ -145,8 +157,8 @@ table tr td {
 
 /* ! styleing for list in single.thml */
 .post ol li {
-  @apply list-decimal list-outside ml-6
+  @apply list-decimal list-outside ml-6;
 }
 .post ul > li {
-  @apply list-disc list-outside ml-6
+  @apply list-disc list-outside ml-6;
 }
