@@ -651,6 +651,10 @@ ol,
   width: 100vw;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .border-separate {
   border-collapse: separate;
 }
@@ -957,13 +961,13 @@ footer {
 }
 
 .thumbnail {
-  width: 100%;
+  padding-right: 1em;
   display: flex;
   align-items: center;
 }
 
 .thumbnail img {
-  wwidth: 100%;
+  width: 100%;
 }
 
 /* ! styleing for <code> */
@@ -1111,5 +1115,19 @@ table tr td {
 
   .sm\:grid-cols-\[150px_1fr\] {
     grid-template-columns: 150px 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-52 {
+    width: 13rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:rounded-md {
+    border-radius: 0.375rem;
   }
 }

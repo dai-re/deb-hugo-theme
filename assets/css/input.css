@@ -98,12 +98,12 @@ footer {
   @apply first-letter:text-xl first-letter:font-bold;
 }
 .thumbnail {
-  width: 100%;
+  padding-right: 1em;
   display: flex;
   align-items: center;
 }
 .thumbnail img {
-  wwidth: 100%;
+  width: 100%;
 }
 
 /* ! styleing for <code> */
