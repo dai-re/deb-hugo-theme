@@ -1,3 +1,4 @@
+/* WARNING: TAILWIND STUFF DO NOT TOUCH */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,12 +10,20 @@
     list-style: none;
   }
 }
+/* WARNING: TAILWIND STUFF DO NOT TOUCH */
 
-/* ! font in all pages */
+/* REVIEW: FONT IN ALL PAGES */
 html {
   font-family: 'M PLUS 1p', sans-serif !important;
   /* font-weight: bold; */
 }
+
+/* ! in main_canvas */
+.main_canvas {
+  min-height: calc(100vh - 46px) !important;
+}
+
+/* REVIEW: heading text h1 - h5 */
 
 h1 {
   @apply text-2xl;
@@ -36,13 +45,6 @@ h5 {
   @apply text-xs;
 }
 
-/* ! in main_canvas */
-.main_canvas {
-  min-height: calc(100vh - 46px) !important;
-}
-
-/* ! heading text h1 - h5 */
-
 h1,
 h2,
 h3,
@@ -63,19 +65,20 @@ h6 {
   content: '#';
 }
 
-/*! list post in home.html  */
+/*REVIEW:  home.html  */
+/* LIST */
 .list-menu::before {
   content: '[+]';
 }
 
-/* ! baseof.html */
+/* REVIEW:  baseof.html */
 /* border code */
 .side {
   min-height: calc(100vh-25px) !important;
   border-right: 1px solid rgba(156 163 175 / 0.5) !important;
 }
 
-/*! footer code in footer.html */
+/*REVIEW: footer.html */
 footer {
   position: absolute;
   bottom: 0;
@@ -86,7 +89,8 @@ footer {
   padding: 0 1em;
 }
 
-/* ! post code in single.html */
+/*REVIEW: single.html */
+/* POST */
 .post {
   /* display: none; */
   width: 100%;
@@ -106,7 +110,7 @@ footer {
   width: 100%;
 }
 
-/* ! styleing for <code> */
+/* CODE */
 p > code {
   @apply rounded-sm font-mono px-3 py-1 text-xs bg-orange-300/50;
 }
@@ -137,8 +141,7 @@ pre {
   box-shadow: 20px 0px rgba(255, 255, 0, 0.5), 40px 0px rgb(0, 0, 255, 0.6);
 }
 
-/* INFO: SINGLE.html */
-/* styleing for table */
+/* TABLE */
 table {
   @apply rounded-md border bg-orange-100 overflow-hidden border-separate border-spacing-0 my-3 p-2;
 }
@@ -153,7 +156,7 @@ table tr td {
   @apply border border-dashed border-orange-500/35 text-xs p-1;
 }
 
-/* ! styleing for list */
+/* LIST */
 .post ol li {
   @apply list-decimal list-outside ml-6;
 }
@@ -161,7 +164,7 @@ table tr td {
   @apply list-disc list-outside ml-6;
 }
 
-/* styleing for blockquote */
+/* BLOCKQUOTE */
 blockquote {
   @apply border-l-4 border-orange-500 pl-3 py-3 my-2 bg-orange-500/25 rounded-r-lg;
 }
