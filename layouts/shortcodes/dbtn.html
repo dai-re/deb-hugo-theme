@@ -2,12 +2,12 @@
 {{ $link := .Get "link" | default "/" }}
 {{ $des := .Get "des" | default "#"}}
 
-<div class="h-[50px] flex items-center justify-between border border-orange-500 mx-12 my-5 rounded-sm">
+<div class="flex justify-between items-center bg-orange-500/30 rounded-l-sm my-2 border-r-4 border-orange-500 pl-3">
   <div class="flex-row ml-3">
-    <h4>{{$title}}</h4>
-    <p class="text-xs italic before:content-['*']">{{$des}}</p>
+    <h4 class="border-none p-0 m-0">{{$title}}</h4>
+    <p class="text-xs text-gray-600 italic before:content-['*']">{{$des}}</p>
   </div>
-  <a href="{{$link}}" class="w-[50px] h-[50px] flex items-center justify-center bg-orange-500">
+  <a href="{{$link}}" class="w-[50px] h-[50px] flex items-center justify-center bg-orange-500/40">
     <div class="">
       <img class="w-6" src="/download.svg" alt="" />
     </div>

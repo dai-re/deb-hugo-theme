@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "css" : "npx tailwindcss --offline -i ./assets/css/input.css -o ./assets/css/main.css --watch",
-    "hugo" : "hugo server"
+    "css": "yarn tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --watch",
+    "hugo": "hugo server"
   },
   "dependencies": {
     "tailwindcss": "^3.4.3"

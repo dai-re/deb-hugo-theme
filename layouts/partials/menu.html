@@ -12,7 +12,7 @@ Renders a menu for the given menu ID.
 
 {{- with index site.Menus $menuID }}
 <ul class="flex gap-2 mr-4 ">
-  <li class="list-none hover:bg-orange-500 hover:rounded-sm hover:px-2 hover:text-white hover:font-bold">{{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}</li>
+  <li class="list-none border-r-4 border-orange-500 pr-2">{{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}</li>
 </ul>
 {{- end }}
 
@@ -31,7 +31,7 @@ Renders a menu for the given menu ID.
 {{- $name = . }}
 {{- end }}
 {{- end }}
-<li class="list-none hover:bg-orange-500 hover:rounded-sm hover:px-2 hover:text-white hover:font-bold">
+<li class="list-none  border-r-4 border-orange-500 pr-2 hover:bg-orange-500/25 transition-all duration-300">
   <a {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end -}}>{{
     $name }}</a>
   {{- with .Children }}

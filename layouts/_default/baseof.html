@@ -4,8 +4,7 @@
   dir="{{ or site.Language.LanguageDirection `ltr` }}"
 >
   <head>
-    {{ partial "head.html" . }}
-    {{ if .Param "math" }} {{ partialCached "math.html" . }} {{ end }}
+    {{ partial "head.html" . }} {{ if .Param "math" }} {{ partialCached "math.html" . }} {{ end }}
   </head>
 
   <body class="w-screen min-h-screen elative overflow-x-auto">
@@ -14,17 +13,17 @@
       <div class="grid sm:grid-cols-[150px_1fr] main_canvas">
         <div class="justify-center py-6 side hidden sm:flex">
           <div class="px-2">
-            <ul class="flex gap-2 flex-wrap justify-center">
+            <ul class="flex-row gap-2 flex-wrap justify-center">
               {{ range .Site.Taxonomies.tags }}
-              <li class="bg-orange-500 rounded-sm px-2 text-xs font-bold list-none">
-                <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+              <li class="text-sm px-2 rounded-lg font-bold list-none before:content-['#'] before:text-orange-500  hover:bg-orange-500/30">
+                <a class="" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
               </li>
               {{ end }}
             </ul>
           </div>
           <div class="category"></div>
         </div>
-        <div class="py-6 ml-3">
+        <div class="p-4">
           <div class="">
             <div class="">
               <ul class="flex flex-col justify-center gap-2">

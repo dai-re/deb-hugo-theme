@@ -4,11 +4,12 @@
   <li
     class="flex items-center gap-2 list-menu text-sm hover:bg-orange-500 hover:rounded-sm"
   >
-    {{ range .Params.tags }}
+  <!-- INFO: uglyyyyyy -->
+    <!-- {{ range .Params.tags }}
     <div class="bg-orange-500 px-3 rounded-sm font-bold text-white">
       {{ . }}
     </div>
-    {{ end }}
+    {{ end }} -->
     <span class="text-xs text-gray-500">{{ .Date.Format "2006-01-02" }}</span>-
     {{ .LinkTitle }}
   </li>
