@@ -93,9 +93,10 @@ footer {
 /* POST */
 .post {
   /* display: none; */
-  width: 100%;
-  padding: 0 1em 0 0;
+  width: 100vw;
+  /* padding: 0 1em 0 0; */
   overflow: hidden;
+  @apply px-3 sm:w-full
 }
 .post > p {
   text-indent: 1em;
@@ -143,7 +144,7 @@ pre {
 
 /* TABLE */
 table {
-  @apply rounded-md border bg-orange-100 overflow-hidden border-separate border-spacing-0 my-3 p-2;
+  @apply rounded-md border bg-orange-100 border-separate border-spacing-0 my-3 p-2 table-fixed w-full block overflow-scroll;
 }
 table tr:nth-child(even) {
   @apply bg-orange-500/30;
