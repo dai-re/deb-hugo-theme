@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html
   lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
   dir="{{ or site.Language.LanguageDirection `ltr` }}"
@@ -15,7 +15,9 @@
           <div class="px-2">
             <ul class="flex-row gap-2 flex-wrap justify-center">
               {{ range .Site.Taxonomies.tags }}
-              <li class="text-sm px-2 rounded-lg font-bold list-none before:content-['#'] before:text-orange-500  hover:bg-orange-500/30">
+              <li
+                class="text-sm px-2 rounded-lg font-bold list-none before:content-['#'] before:text-orange-500 hover:bg-orange-500/30"
+              >
                 <a class="" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
               </li>
               {{ end }}

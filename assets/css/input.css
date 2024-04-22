@@ -92,11 +92,9 @@ footer {
 /*REVIEW: single.html */
 /* POST */
 .post {
-  /* display: none; */
   width: 100vw;
-  /* padding: 0 1em 0 0; */
   overflow: hidden;
-  @apply px-3 sm:w-full
+  @apply sm:w-full px-4;
 }
 .post > p {
   text-indent: 1em;

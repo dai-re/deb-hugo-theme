@@ -1,9 +1,11 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }} {{ range .Paginator.Pages }}
-<div class="bg-orange-500/30 rounded-md p-3 flex-col w-full mr-4">
-    <a class="text-orange-500 font-bold "  href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+<div class="px-4">
+  <div class="bg-orange-500/30 rounded-md p-3 flex-col w-full mr-4">
+    <a class="text-orange-500 font-bold" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
     {{ .Summary }}
+  </div>
 </div>
 
 {{ end }} {{ end }}
